@@ -1,0 +1,76 @@
+.card {
+  margin: 20px 0px 80px 5px;
+
+  &__wrap {
+    &--outer {
+      position: relative;
+      width: 255px;
+      height: 354px;
+      // left: 117px;
+      // top: 239px;
+
+      background: #5747ea;
+      border-radius: 15px;
+    }
+    &--inner {
+      position: absolute;
+      width: 255px;
+      height: 200px;
+      // left: 117px;
+      top: 239px;
+
+      background: #1c204b;
+      border-radius: 15px;
+      padding: 37px 14px 28px 30px;
+      color: #ffffff;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px !important;
+      line-height: 21px;
+    }
+    &__dots {
+      color: #d8d8d8;
+      font-size: 36px;
+      line-height: 0;
+      margin-top: -10px;
+      letter-spacing: -2px;
+    }
+  }
+
+  &__price {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 39px;
+    line-height: 46px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #bbc0ff;
+    }
+    &__stock {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #ffffff;
+    }
+  }
+}

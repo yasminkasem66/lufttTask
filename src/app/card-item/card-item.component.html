@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card__wrap--outer">
+        <div class="card__wrap--inner">
+            <div class="card__item">
+                <h3>{{product.title| slice:0:8}}</h3>
+                <div class="card__item__dots">...</div>
+            </div>
+            <div class="card__price">
+                <small>{{product.price| currency:'USD':true}}</small>
+            </div>
+            <div class="card__footer">
+                <p>{{ product.description| slice:0:8 }}</p>
+                <div class="card__footer__stock">
+                    <div>InStock </div>
+                    <small>{{ product.stock}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
