@@ -8,9 +8,11 @@ import { Product } from '../@Appservice/models/product';
 })
 export class CardItemComponent implements OnInit {
   @Input() product: Product = {} as Product;
+  @Input() color!: string;
   constructor() {}
 
   ngOnInit(): void {
     console.log('this.product', this.product);
+    console.log('this.color', this.color);
   }
 }

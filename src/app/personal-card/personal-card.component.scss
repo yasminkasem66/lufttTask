@@ -1,76 +1,78 @@
 .card {
-  margin: 20px 0px 80px 5px;
-
+  margin: 20px 5px 80px 5px;
   &__wrap {
     &--outer {
       position: relative;
       width: 255px;
       height: 354px;
-      // left: 117px;
-      // top: 239px;
-
       background: #5747ea;
       border-radius: 15px;
     }
     &--inner {
       position: absolute;
       width: 255px;
-      height: 200px;
-      // left: 117px;
+      //   height: 164px;
       top: 239px;
-
       background: #1c204b;
       border-radius: 15px;
       padding: 37px 14px 28px 30px;
       color: #ffffff;
+      &--item {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 31px;
+          color: #7078c9;
+        }
+        .highLight {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+      }
     }
   }
 
   &__item {
-    display: flex;
-    justify-content: space-between;
-    h3 {
-      font-family: "Rubik";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px !important;
-      line-height: 21px;
+    color: #ffffff;
+    .img-container {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
     }
-    &__dots {
-      color: #d8d8d8;
-      font-size: 36px;
-      line-height: 0;
-      margin-top: -10px;
-      letter-spacing: -2px;
+    #person-img {
+      width: 100%;
+      display: inline-block;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 10px;
     }
-  }
-
-  &__price {
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 39px;
-    line-height: 46px;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
     p {
-      font-family: "Rubik";
+      margin-left: 23px;
       font-style: normal;
       font-weight: 400;
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 15px;
+      line-height: 18px;
       color: #bbc0ff;
     }
-    &__stock {
-      font-family: "Rubik";
+    h2 {
+      margin-left: 23px;
       font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      color: #ffffff;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 12px;
     }
   }
 }

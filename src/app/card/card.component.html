@@ -3,8 +3,8 @@
         <app-personal-card></app-personal-card>
     </div>
     <div class="products-card flex">
-        <ng-container *ngFor="let product of products">
-            <app-card-item [product]="product"></app-card-item>
+        <ng-container *ngFor="let product of products;let i=index">
+            <app-card-item [product]="product" [color]="colors[i]"></app-card-item>
         </ng-container>
     </div>
 

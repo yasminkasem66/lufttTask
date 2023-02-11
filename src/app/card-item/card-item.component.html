@@ -1,5 +1,5 @@
-<div class="card">
-    <div class="card__wrap--outer">
+<div class="card" ng-if="product">
+    <div class="card__wrap--outer" [ngStyle]="{'background': color ? color : 'red'}">
         <div class="card__wrap--inner">
             <div class="card__item">
                 <h3>{{product.title| slice:0:8}}</h3>
@@ -9,7 +9,7 @@
                 <small>{{product.price| currency:'USD':true}}</small>
             </div>
             <div class="card__footer">
-                <p>{{ product.description| slice:0:8 }}</p>
+                <p>{{ product.description| slice:0:30 }}</p>
                 <div class="card__footer__stock">
                     <div>InStock </div>
                     <small>{{ product.stock}}</small>
