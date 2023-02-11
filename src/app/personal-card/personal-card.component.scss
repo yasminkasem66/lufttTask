@@ -1,5 +1,5 @@
 .card {
-  margin: 20px 5px 80px 5px;
+  margin: 10px 5px 80px 5px;
   &__wrap {
     &--outer {
       position: relative;
@@ -73,6 +73,86 @@
       font-size: 40px;
       line-height: 47px;
       letter-spacing: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    &__wrap {
+      &--outer {
+        position: relative;
+        width: 255px;
+        height: 354px;
+        background: #5747ea;
+        border-radius: 15px;
+      }
+      &--inner {
+        position: absolute;
+        width: 255px;
+        //   height: 164px;
+        top: 239px;
+        background: #1c204b;
+        border-radius: 15px;
+        padding: 37px 14px 28px 30px;
+        color: #ffffff;
+        &--item {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 31px;
+            color: #7078c9;
+          }
+          .highLight {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    &__item {
+      color: #ffffff;
+      .img-container {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+      }
+      #person-img {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        margin-top: 10px;
+      }
+      p {
+        margin-left: 23px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #bbc0ff;
+      }
+      h2 {
+        margin-left: 23px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 12px;
+      }
     }
   }
 }
