@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from '../@Appservice/models/product';
 import { ProductService } from '../@Appservice/services/product.service';
 
@@ -22,19 +23,12 @@ export class CardComponent implements OnInit {
     '#7335D2',
   ];
 
-  constructor(private productService: ProductService) {
-    this.getProducts();
-  }
+  constructor(
+    private productService: ProductService,
+    private route: ActivatedRoute
+  ) {}
 
-  getProducts() {
-    this.productService.getAll().subscribe({
-      next: (data: any) => {
-        this.products = data.products;
-        // this.products.map((d, i) => (d.color = this.colors[i]));
-        // console.log("this.products",this.products);
-      },
-    });
+  ngOnInit() {
+    this.products = this.route.snapshot.data['products'].products;
   }
-
-  ngOnInit(): void {}
 }

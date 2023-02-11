@@ -1,5 +1,5 @@
 .card {
-  margin: 10px 5px 80px 5px;
+  margin: 5px;
   &__wrap {
     &--outer {
       position: relative;
@@ -79,6 +79,7 @@
 
 @media screen and (max-width: 992px) {
   .card {
+    margin: 40px;
     &__wrap {
       &--outer {
         position: relative;
