@@ -4,24 +4,28 @@
 }
 
 .personal-card {
-  margin-right: 10px;
+  margin-right: 5px;
   width: 255px;
 }
+
 .products-card {
-  width: 1052px;
+  width: calc(100% - 260px);
 }
+
 // 1250
 @media screen and (max-width: 992px) {
-  .personal-card {
-    width: 100%;
+  .flex {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .personal-card {
+    width: 100%;
+    text-align: center;
+  }
+
   .products-card {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }

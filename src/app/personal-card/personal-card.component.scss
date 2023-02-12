@@ -1,5 +1,6 @@
 .card {
   margin: 5px;
+
   &__wrap {
     &--outer {
       position: relative;
@@ -8,18 +9,20 @@
       background: #5747ea;
       border-radius: 15px;
     }
+
     &--inner {
       position: absolute;
       width: 255px;
-      //   height: 164px;
       top: 239px;
       background: #1c204b;
       border-radius: 15px;
       padding: 37px 14px 28px 30px;
       color: #ffffff;
+
       &--item {
         display: flex;
         flex-direction: column;
+
         span {
           font-style: normal;
           font-weight: 400;
@@ -27,6 +30,7 @@
           line-height: 31px;
           color: #7078c9;
         }
+
         .highLight {
           font-family: "Rubik";
           font-style: normal;
@@ -41,6 +45,7 @@
 
   &__item {
     color: #ffffff;
+
     .img-container {
       position: relative;
       width: 90px;
@@ -49,6 +54,7 @@
       margin: 0 auto;
       margin-bottom: 1.5rem;
     }
+
     #person-img {
       width: 100%;
       display: inline-block;
@@ -58,6 +64,7 @@
       position: relative;
       margin-top: 10px;
     }
+
     p {
       margin-left: 23px;
       font-style: normal;
@@ -66,6 +73,7 @@
       line-height: 18px;
       color: #bbc0ff;
     }
+
     h2 {
       margin-left: 23px;
       font-style: normal;
@@ -80,6 +88,10 @@
 @media screen and (max-width: 992px) {
   .card {
     margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &__wrap {
       &--outer {
         position: relative;
@@ -89,6 +101,7 @@
         border-radius: 15px;
         z-index: 999;
       }
+
       &--inner {
         position: absolute;
         width: 327px;
@@ -97,6 +110,7 @@
         border-radius: 15px;
         padding: 10px;
         color: #ffffff;
+
         &--item {
           display: flex;
           flex-direction: row;
@@ -109,6 +123,7 @@
             line-height: 31px;
             color: #7078c9;
           }
+
           .highLight {
             font-style: normal;
             font-weight: 400;
@@ -135,6 +150,7 @@
         margin-bottom: 1.5rem;
         padding: 5px;
       }
+
       #person-img {
         width: 100%;
         display: inline-block;
@@ -149,6 +165,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         p {
           font-style: normal;
           font-weight: 400;
@@ -157,6 +174,7 @@
           color: #bbc0ff;
           margin-bottom: 10px;
         }
+
         h2 {
           font-style: normal;
           font-weight: 300;
