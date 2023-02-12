@@ -7,79 +7,94 @@
   justify-content: center;
   background-color: #212555;
   box-shadow: $shadow-1;
-}
-.nav-center {
-  width: 90vw;
-  max-width: $max-width;
-}
-.nav-header {
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-header img {
-  width: 200px;
-}
-.nav-logo {
-  display: flex;
-  align-items: flex-end;
-}
 
-.nav-links {
-  height: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
+  .nav-center {
+    width: 90vw;
+    max-width: $max-width;
 
-.nav-link {
-  display: block;
-  text-align: center;
-  font-size: 1.25rem;
-  text-transform: capitalize;
-  color: $LightNavy;
-  letter-spacing: 1px;
-  padding: 1rem 0;
-  text-decoration: none;
-  color: $White !important;
-}
-.nav-link:hover {
-  color: $LightestNavy;
-}
+    .nav-header {
+      height: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-.contact-link a {
-  padding: 0.15rem 1rem;
-  text-decoration: none;
+      .nav-logo {
+        display: flex;
+        align-items: flex-end;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .nav-link {
+      display: block;
+      text-align: center;
+      font-size: 1.25rem;
+      text-transform: capitalize;
+      color: $LightNavy;
+      letter-spacing: 1px;
+      padding: 1rem 0;
+      text-decoration: none;
+      color: $White !important;
+
+      &:hover {
+        color: $LightestNavy;
+      }
+    }
+
+    .contact-link a {
+      padding: 0.15rem 1rem;
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
   .navbar {
     height: 4rem;
+
+    .nav-center {
+      display: flex;
+      align-items: center;
+
+      .nav-header {
+        padding: 0;
+        margin-right: 2rem;
+        height: auto;
+      }
+    }
+
+    .nav-links {
+      height: auto !important;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      .nav-link {
+        padding: 0;
+        border-top: none;
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+
+      .contact-link {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
   }
-  .nav-center {
-    display: flex;
-    align-items: center;
-  }
-  .nav-header {
-    padding: 0;
-    margin-right: 2rem;
-    height: auto;
-  }
-  .nav-links {
-    height: auto !important;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-  .nav-link {
-    padding: 0;
-    border-top: none;
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
-  .contact-link {
-    margin-right: 0;
-    margin-left: auto;
-  }
+
+
+
+
+
 }
