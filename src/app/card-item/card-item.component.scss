@@ -42,36 +42,125 @@
     }
   }
 
-  &__price {
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 39px;
-    line-height: 46px;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-
-    p {
+  &__content {
+    &__price {
+      display: inline-block;
       font-family: "Rubik";
       font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 14px;
-      color: #bbc0ff;
-      padding-right: 8px;
+      font-weight: 300;
+      font-size: 39px;
+      line-height: 46px;
     }
 
-    &__stock {
-      font-family: "Rubik";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      text-align: center;
-      color: #ffffff;
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #bbc0ff;
+        padding-right: 8px;
+      }
+
+      &__stock {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 481px) {
+  .card {
+    margin: 45px auto;
+
+    &__wrap {
+      &--outer {
+        position: relative;
+        width: 327px;
+        height: 100px;
+        background: #55c2e6;
+        border-radius: 15px;
+      }
+
+      &--inner {
+        position: absolute;
+        width: 327px;
+        padding: 27px 30px 28px 30px;
+        top: 25px;
+        background: #1c204b;
+        border-radius: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px !important;
+        line-height: 21px;
+      }
+
+      &__dots {
+        color: #d8d8d8;
+        font-size: 36px;
+        margin-top: -10px;
+        letter-spacing: -2px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__price {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 39px;
+        line-height: 46px;
+      }
+
+      &__footer {
+        display: inline;
+        padding: 10px;
+
+        p {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 16px;
+          text-align: justify;
+          color: #BBC0FF;
+          margin-left: 10px;
+        }
+
+        &__stock {
+          display: none;
+        }
+      }
+
     }
   }
 }

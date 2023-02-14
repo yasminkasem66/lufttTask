@@ -5,15 +5,17 @@
                 <h3>{{product.title| slice:0:8}}</h3>
                 <div class="card__item__dots">...</div>
             </div>
-            <div class="card__price">
-                <small>{{product.price| currency:'USD':true}}</small>
-            </div>
-            <div class="card__footer">
-                <p>{{ product.description| slice:0:20 }}</p>
-                <div class="card__footer__stock">
-                    <div>InStock </div>
-                    <small>{{ product.stock}}</small>
-                </div>
+            <div class="card__content">
+                <span class="card__content__price">
+                    <small>{{product.price| currency:'USD':true}}</small>
+                </span>
+                <span class="card__content__footer">
+                    <p>{{ product.description| slice:0:20 }}</p>
+                    <div class="card__content__footer__stock">
+                        <div>InStock </div>
+                        <small>{{ product.stock}}</small>
+                    </div>
+                </span>
             </div>
         </div>
     </div>
