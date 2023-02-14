@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../@Appservice/models/product';
-import { ProductService } from '../@Appservice/services/product.service';
 
 @Component({
   selector: 'app-card',
@@ -24,11 +23,12 @@ export class CardComponent implements OnInit {
   ];
 
   constructor(
-    private productService: ProductService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit() {
-    this.products = this.route.snapshot.data['products'].products;
+    this.products = this.route.snapshot.data['products'];
+    console.log("this.products", this.products);
+
   }
 }

@@ -8,14 +8,13 @@ import {
   UrlSegment,
   UrlTree,
 } from '@angular/router';
-import { Observable } from 'rxjs';
 import { ProductService } from '../services/product.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductResolverGuard implements Resolve<any> {
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     return this.productService.getAll();

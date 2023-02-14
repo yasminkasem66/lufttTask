@@ -1,3 +1,3 @@
 export const URLs = {
-  getProducts: 'https://dummyjson.com/products?limit=10',
+  getProducts: 'https://fakestoreapi.com/products?limit=10',
 };
